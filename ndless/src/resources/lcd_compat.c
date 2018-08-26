@@ -213,10 +213,10 @@ bool lcd_compat_enable()
 
     const char *dlg[] = {"DLG", NULL};
     TCT_Local_Control_Interrupts(-1);
-    show_dialog_box2_(0, (const char*) u"Ndless", (const char*) u"Activating compatibility mode.\n"
-                                     "This application hasn't been updated\n"
-                                     "to work with your hardware.\n"
-                                     "You may run into weird issues!", dlg);
+    show_dialog_box2_(0, (const char*) u"Ndless", (const char*) u"ERROR\n"
+                                     
+                                     
+                                     , dlg);
     TCT_Local_Control_Interrupts(-1);
     wait_no_key_pressed();
 
