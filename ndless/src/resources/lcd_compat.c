@@ -213,10 +213,7 @@ bool lcd_compat_enable()
 
     const char *dlg[] = {"DLG", NULL};
     TCT_Local_Control_Interrupts(-1);
-    show_dialog_box2_(0, (const char*) u"Ndless", (const char*) u"ERROR\n"
-                                     
-                                     
-                                     , dlg);
+     show_dialog_box2_(0, (const char*) u"1020", (const char*) u"Internal Error\n"  , dlg);
     TCT_Local_Control_Interrupts(-1);
     wait_no_key_pressed();
 
